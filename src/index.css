@@ -48,7 +48,7 @@
 }
 
 .message-container {
-  @apply rounded-lg p-4 mb-4 max-w-[80%];
+  @apply rounded-2xl p-6 mb-4 max-w-[80%] backdrop-blur-sm;
 }
 
 .user-message {
@@ -60,9 +60,62 @@
 }
 
 .input-gradient {
-  @apply bg-gradient-to-r from-gray-800 to-gray-900 border-[1px] border-gray-700;
+  @apply bg-gradient-to-r from-gray-800 to-gray-900 border-[1px] border-gray-700 rounded-2xl;
 }
 
 .send-button-gradient {
-  @apply bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700;
+  @apply bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 rounded-2xl;
+}
+
+/* Markdown Styles */
+.prose {
+  @apply text-foreground;
+}
+
+.prose p {
+  @apply mb-4;
+}
+
+.prose h1, .prose h2, .prose h3, .prose h4 {
+  @apply text-primary font-bold mb-4;
+}
+
+.prose h1 {
+  @apply text-2xl;
+}
+
+.prose h2 {
+  @apply text-xl;
+}
+
+.prose h3 {
+  @apply text-lg;
+}
+
+.prose ul, .prose ol {
+  @apply ml-6 mb-4;
+}
+
+.prose ul {
+  @apply list-disc;
+}
+
+.prose ol {
+  @apply list-decimal;
+}
+
+.prose code {
+  @apply bg-gray-800 px-2 py-1 rounded-md text-sm;
+}
+
+.prose pre {
+  @apply bg-gray-800 p-4 rounded-lg overflow-x-auto mb-4;
+}
+
+.prose a {
+  @apply text-primary hover:underline;
+}
+
+.prose blockquote {
+  @apply border-l-4 border-primary pl-4 italic my-4;
 }
