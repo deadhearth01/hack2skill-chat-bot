@@ -16,7 +16,8 @@ const Chatbot: React.FC = () => {
   const { toast } = useToast();
   
   const groq = new Groq({
-    apiKey: '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'
+    apiKey: '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',
+    dangerouslyAllowBrowser: true // Added this line to fix the browser environment error
   });
 
   const scrollToBottom = () => {
